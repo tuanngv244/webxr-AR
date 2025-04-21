@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -9,4 +11,27 @@ body {
   min-height: 100vh;
   overflow: hidden;
   background-color: #000;
+  font-family: "Poppins", sans-serif !important;
+}
+
+#overlay-content {
+  position: absolute;
+  left: calc(50% - 7rem);
+}
+
+#container {
+  width: 14rem;
+  color: #fff;
+  margin: 2rem auto;
+}
+
+#model-select {
+  width: 100px;
+  font-family: "Poppins", sans-serif !important;
+  border-radius: 0.325rem;
+  margin-left: 1rem;
+}
+
+#model-select option {
+  font-family: "Poppins", sans-serif !important;
 }
