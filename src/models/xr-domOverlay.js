@@ -2,6 +2,7 @@ import * as THREE from "three";
 import { ARButton } from "three/examples/jsm/webxr/ARButton.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
+import { xrPolyfillPromise } from "../xrPolyfill";
 
 const modelLinks = [
   { label: "Chair", value: "chair", path: "/models/chair.gltf" },
@@ -192,6 +193,7 @@ function main() {
 }
 
 async function init() {
+  await xrPolyfillPromise;
   await prepare();
   main();
 }
